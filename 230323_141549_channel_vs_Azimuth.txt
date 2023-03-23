@@ -1,0 +1,78 @@
+WARNING: channel_data: 35
+WARNING: Azimuth angle: 90.0 degrees
+WARNING: channel_data: 15
+WARNING: Azimuth angle: 87.0 degrees
+WARNING: channel_data: 27
+WARNING: Azimuth angle: 100.0 degrees
+WARNING: channel_data: 27
+WARNING: Azimuth angle: 100.0 degrees
+WARNING: channel_data: 2
+WARNING: Azimuth angle: 84.0 degrees
+WARNING: channel_data: 35
+WARNING: Azimuth angle: 90.0 degrees
+WARNING: channel_data: 33
+WARNING: Azimuth angle: 104.0 degrees
+WARNING: channel_data: 33
+WARNING: Azimuth angle: 104.0 degrees
+WARNING: channel_data: 31
+WARNING: Azimuth angle: 106.0 degrees
+WARNING: channel_data: 30
+WARNING: Azimuth angle: 101.0 degrees
+WARNING: channel_data: 32
+WARNING: Azimuth angle: 102.0 degrees
+WARNING: channel_data: 18
+WARNING: Azimuth angle: 109.0 degrees
+WARNING: channel_data: 8
+WARNING: Azimuth angle: 147.0 degrees
+WARNING: channel_data: 1
+WARNING: Azimuth angle: 81.0 degrees
+WARNING: channel_data: 10
+WARNING: Azimuth angle: 134.0 degrees
+WARNING: channel_data: 14
+WARNING: Azimuth angle: 88.0 degrees
+WARNING: channel_data: 18
+WARNING: Azimuth angle: 109.0 degrees
+WARNING: channel_data: 22
+WARNING: Azimuth angle: 107.0 degrees
+WARNING: channel_data: 18
+WARNING: Azimuth angle: 107.0 degrees
+WARNING: channel_data: 3
+WARNING: Azimuth angle: 76.0 degrees
+WARNING: channel_data: 22
+WARNING: Azimuth angle: 106.0 degrees
+WARNING: channel_data: 9
+WARNING: Azimuth angle: 136.0 degrees
+WARNING: channel_data: 32
+WARNING: Azimuth angle: 103.0 degrees
+WARNING: channel_data: 34
+WARNING: Azimuth angle: 99.0 degrees
+WARNING: channel_data: 6
+WARNING: Azimuth angle: 50.0 degrees
+WARNING: channel_data: 25
+WARNING: Azimuth angle: 107.0 degrees
+WARNING: channel_data: 13
+WARNING: Azimuth angle: 86.0 degrees
+WARNING: channel_data: 23
+WARNING: Azimuth angle: 109.0 degrees
+WARNING: channel_data: 5
+WARNING: Azimuth angle: 60.0 degrees
+WARNING: channel_data: 21
+WARNING: Azimuth angle: 107.0 degrees
+WARNING: channel_data: 22
+WARNING: Azimuth angle: 108.0 degrees
+WARNING: channel_data: 27
+WARNING: Azimuth angle: 101.0 degrees
+WARNING: channel_data: 1
+WARNING: Azimuth angle: 82.0 degrees
+WARNING: channel_data: 32
+WARNING: Azimuth angle: 102.0 degrees
+WARNING: channel_data: 27
+WARNING: Azimuth angle: 101.0 degrees
+WARNING: channel_data: 35
+WARNING: Azimuth angle: 95.0 degrees
+WARNING: channel_data: 31
+WARNING: Azimuth angle: 99.0 degrees
+WARNING: channel_data: 18
+WARNING: Azimuth angle: 119.0 degrees
+WARNING: channel_data: 27
+WARNING: Azimuth angle: 101.0 degrees
