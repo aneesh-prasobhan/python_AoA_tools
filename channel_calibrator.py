@@ -1,6 +1,8 @@
 import numpy as np
 from sklearn.linear_model import LinearRegression   # pip install scikit-learn
-from sklearn.preprocessing import PolynomialFeatures
+from sklearn.svm import SVR  
+from sklearn.preprocessing import PolynomialFeatures, StandardScaler
+from sklearn.model_selection import GridSearchCV
 import pickle
 
 # Raw data
@@ -21,22 +23,32 @@ azimuth_angles = np.array([d[1] for d in data])
 # Calculate the difference between the target angle (90) and the given azimuth angles
 angle_difference = 90 - azimuth_angles
 
-# Print angle difference
-print('Angle difference:', angle_difference)
+# Scale the channel data
+scaler = StandardScaler()
+channel_data_scaled = scaler.fit_transform(channel_data)
 
-#Create polynomial features
-degree = 150 # Experiment with different degrees
-# min_degree = 199
-# max_degree = 199
-poly_features = PolynomialFeatures(degree=degree, include_bias=False)
-channel_data_poly = poly_features.fit_transform(channel_data)
+# Fit the SVR model
+model = SVR(kernel='rbf')
 
-# Fit the polynomial regression model
-model = LinearRegression().fit(channel_data_poly, angle_difference)
+#Define the range of hyperparameters for grid search
+param_grid = {
+    'C': [1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000],       # 100000000 was the best
+    'gamma': [0.001, 0.01, 0.1, 1, 10, 100, 1000, 10000]        # gamma 100 was the best
+}
+# Perform grid search with cross-validation
+grid_search = GridSearchCV(model, param_grid, cv=5, scoring='neg_mean_squared_error')
+grid_search.fit(channel_data_scaled, angle_difference)
 
-# Save the model and polynomial features to files
-with open('poly_regression_model.pkl', 'wb') as file:
-    pickle.dump(model, file)
+# Print the best hyperparameters
+print(grid_search.best_params_)
 
-with open('poly_features.pkl', 'wb') as file:
-    pickle.dump(poly_features, file)
+# Get the best estimator from the grid search
+best_model = grid_search.best_estimator_
+
+# Save the best model and scaler to files
+with open('svr_best_model.pkl', 'wb') as file:
+    pickle.dump(best_model, file)
+
+with open('scaler.pkl', 'wb') as file:
+    pickle.dump(scaler, file)
+
